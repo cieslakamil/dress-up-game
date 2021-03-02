@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+}
+
+button {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    padding: 0;
+    background-color: #fff0;
+}
+
+button:focus {
+    border: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #eeb784, #d32323);
+    background-size: 600% 600%;
+    animation: gradient 10s ease infinite;
+}
+
+#container {
+    width: 98%;
+    height: 700px;
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.side-block {
+    width: 40%;
+    height: 98%;
+    background-color: rgba(57, 45, 59, 0.575);
+    margin: 2%;
+    border: solid rgb(255, 255, 255) 8px;
+    margin: 3px;
+}
+
+#main-block {
+    width: 100%;
+    height: 98%;
+    margin: 1%;
+    position: relative;
+    display: flex;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.863), rgba(252, 228, 255, 0.822), rgba(211, 157, 255, 0.756));
+    flex-direction: column;
+    justify-content: center;
+    border: solid rgb(255, 255, 255) 8px;
+    margin: 3px;
+}
+
+#main-block img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}

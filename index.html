@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>dragndrop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="clothes.css">
+    <script src="jquery-3.5.1.js"></script>
+    <script src="functions.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="left-block" class="side-block">
+
+        </div>
+        <div id="main-block">
+            <img id="corpus" src="resources\corpus.png" alt="bodyImg">
+            <div id="clothes"></div>
+            <div id="clothes-menu"></div>
+        </div>
+        <div id="right-block" class="side-block">
+
+        </div>
+        <div id="footer">
+
+        </div>
+        <script>
+            clothesDirPath = 'resources/clothes';
+            clothesDirsPaths = 'blouses,bras,chokers,cropped-shirts,dresses-with-straps,full-length,high-waisted-pants,left-hand,long-sleeved-dress,shoes,skirts,tails,thigh-highs';
+            clothesSubdirs = clothesSubdirs.split(',');
+            console.log(clothesSubdirs);
+
+
+            function imgError(img) {
+                endOfFolder = true;
+            }
+            let img = new Image();
+            img.onerror = imgError;
+            img.src = 'resources/clothes/blouses/blouses (1).PNG';
+
+            let clothes = $('#clothes');
+            clothes.append(img);
+
+            for (let path of clothesDirsPaths) {
+                let endOfFolder = False;
+                while (endOfFolder == false) {
+                    let img = new Image();
+                    img.onerror = imgError;
+                    img.src = 'resources/clothes/blouses/blouses (1).PNG';
+
+                }
+            }
+            // OLD CODE ----------------
+            /*
+            let button = document.getElementById('top');
+            button.addEventListener('click', function() {
+                changeClothVisibility('blouses2')
+            });
+            */
+        </script>
+    </div>
+
+
+</body>
+
+</html>
